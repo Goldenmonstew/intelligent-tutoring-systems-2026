@@ -44,7 +44,7 @@ The three keynotes: **Ig Ibert Bittencourt** (from intelligent tutoring to "inte
 | [`README.md`](README.md) | Chinese version (overview + key figures + navigation) |
 | [`README.en.md`](README.en.md) | This file (English) |
 | [`docs/01-视频总览.md`](docs/01-视频总览.md) | Overview of the 14 recordings: content, duration, sessions, themes |
-| [`docs/02-论文详解.md`](docs/02-论文详解.md) | Per-paper summaries organized by recording/session (71 papers) |
+| [`docs/02-论文详解.md`](docs/02-论文详解.md) | Per-paper **deep dives** (71 papers): research problem / method / contributions / takeaways, by session |
 | [`docs/03-研究洞察.md`](docs/03-研究洞察.md) | Research hot topics, technical difficulties, scenario→solution map, integration directions, pitfalls |
 | [`docs/04-技术统计.md`](docs/04-技术统计.md) | Precise statistics and agreement for tracks / methods / maturity |
 | [`docs/05-跨年趋势.md`](docs/05-跨年趋势.md) | Cross-year calibration against ITS / AIED / LAK 2024–2025 |
