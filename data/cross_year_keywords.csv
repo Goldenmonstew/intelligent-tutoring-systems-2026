@@ -1,0 +1,8 @@
+signal_id,signal,include_patterns,exclusion_rules
+1,Agentic / multi-agent,agent | agentic | multi-agent,(none)
+2,LLM / generative-AI base,LLM | GPT | generative | chatbot | conversational,(none)
+3,Trust / responsible / fairness,\btrust | responsible | \bfair | \bbias | ethic | inclusive,"word-boundary regex on fair/bias to avoid substring false hits"
+4,Knowledge tracing,knowledge tracing | DKT | BKT,(none)
+5,SRL / scaffolding / cognitive-load (broad bundle),over-reliance | help-timing | scaffold | cognitive load | SRL | self-regulated | coaching,"BROAD bundle. The NARROW sub-topic 'over-reliance / help-timing / scaffolding-fading' has ~0 title hits in 2024-2025; the counts are dominated by the broad SRL/scaffolding/cognitive-load family. Do not read signal-5 counts as 'over-reliance'. 'coaching' is a weak hit."
+6,Local / efficient / on-device deploy,local | quantiz | efficient | on-device | low-cost | deploy | edge,"exclude 'edge' inside 'knowledge'; generic 'deploy'/'efficiency' excluded after adjudication. Genuine hits: ITS = 0, AIED = 0; LAK 2024/2025 = 1 each (only a 'scalab*'-type title survives)."
+7,Affect / multimodal / engagement,affect | emotion | sentiment | multimodal | eye | gaze | facial | physiological | engagement,(none)

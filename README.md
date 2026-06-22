@@ -1,5 +1,7 @@
 # ITS 2026 会议研究分析
 
+> English version: [README.en.md](README.en.md) · 许可 / License: 文本与数据 [CC BY 4.0](LICENSE) · 代码 [MIT](LICENSE)
+
 > 第 22 届国际智能辅导系统大会（Intelligent Tutoring Systems, **ITS 2026**）于 2026 年 6 月 3–5 日在塞浦路斯帕福斯（Neapolis University Pafos）举行，主题 ***Agentic Learning Ecosystems and ITS***。
 > 本仓库是对该会议**全部 14 场公开录像**的系统性内容分析，覆盖 **3 场主旨报告 + 71 篇论文 + 8 大技术轨道**，并已逐篇对照官方会议程序核实。
 >
@@ -7,7 +9,7 @@
 
 ---
 
-## 一句话总定论
+## 核心观察
 
 从本届会议的**显性议程**看，智能辅导系统的价值标尺已从"预测更准、个性化更强"，明显扩展到"**可信、克制、可负担、不伤害学习者**"。
 
@@ -46,7 +48,10 @@
 | [`docs/04-技术统计.md`](docs/04-技术统计.md) | 技术方向/方法/成熟度的精确统计与一致性 |
 | [`docs/05-跨年趋势.md`](docs/05-跨年趋势.md) | 对照 ITS/AIED/LAK 2024–2025 的趋势校准 |
 | [`docs/06-论文清单与核对.md`](docs/06-论文清单与核对.md) | 按官方程序核对的 71 篇论文清单（编号/标题/作者/session）|
-| [`data/coding.csv`](data/coding.csv) | 71 篇逐篇编码（主轨道 / LLM 用法 / agentic），可据此复算全部比例 |
+| [`data/coding.csv`](data/coding.csv) | 71 篇逐篇编码：三套编码列（内容 / 标题① / 标题②）+ 共识列，可复算全部比例与一致性（κ）|
+| [`data/cross_year_keywords.csv`](data/cross_year_keywords.csv) | 跨年趋势的关键词规则（7 信号 + 去伪规则）|
+| [`data/cross_year_counts.csv`](data/cross_year_counts.csv) | 三会 × 两年的标题级命中计数（含分母）|
+| [`scripts/count_keywords.py`](scripts/count_keywords.py) | 按规则对标题清单重算命中，使跨年部分可复算 |
 
 ---
 
@@ -56,6 +61,13 @@
 - **核实**：全部论文标题、作者、编号逐篇对照 [ITS 2026 官方会议程序](https://iis-international.org/conference-program-2026/) 核对。
 - **编码与统计**：主轨道、LLM 用法、agentic 架构采用**三套独立编码口径**（一套结合报告内容、两套仅依据标题），并报告口径间一致性（Cohen's κ）；缺席/未呈现的论文按标题口径补码，故主轨道统计覆盖全 71 篇。操作定义、一致性与可审计编码表见 [`docs/04-技术统计.md`](docs/04-技术统计.md) 与 [`data/coding.csv`](data/coding.csv)。
 - **趋势校准**：对照 ITS（2024/2025）、AIED、LAK 论文集**标题级**关键词，区分"标题可见度的持续信号"与"本届主题放大"（非全文方法采用率）。
+
+## 许可
+
+- **文本与数据**（docs/、data/、README*）：**CC BY 4.0**
+- **代码**（scripts/）：**MIT**
+
+详见 [LICENSE](LICENSE)。本仓库不就底层会议录像、论文全文及第三方材料主张额外权利；论文标题、作者姓名等书目信息仅作识别与引用之用，其原有权利不受影响。
 
 ## 免责声明
 
